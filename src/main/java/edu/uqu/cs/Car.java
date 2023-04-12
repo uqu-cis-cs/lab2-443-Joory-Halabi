@@ -3,7 +3,6 @@ package edu.uqu.cs;
  * Lab 2 
  * CS 1312
  */
-
 /*
 * Make sure to complete and submit your lab
 */
@@ -22,6 +21,9 @@ public class Car{
      *
      */
 
+    private String model;
+    private boolean inOutGarage;
+
     /************ Part 2 **************/
     /**
      * Define a default constructor and set 
@@ -34,6 +36,11 @@ public class Car{
      * }
      */
 
+    public Car() {
+        inOutGarage=false;
+        model="";
+        }
+
     /************ Part 3 **************/
     /**
      * Define all getter methods below
@@ -44,6 +51,12 @@ public class Car{
      * }
      */
 
+    public String getModel() {
+        return model;
+    }
+    public boolean getInOutGarage() {
+        return inOutGarage;
+    }
 
     /************ Part 4 **************/
     /**
@@ -55,6 +68,12 @@ public class Car{
      *
      */
 
+    public void setModel(String m){
+         model=m;
+    }
+    public void setInOutGarage(boolean inOutGarage) {
+        this.inOutGarage = inOutGarage;
+    }
 
     /************ Part 5 **************/
     /**
@@ -63,7 +82,12 @@ public class Car{
      * moveCarIn() to set the inOutGarage flag to true;
      *
      */
-
-
-
+    
+     public void moveCarOut(){
+        inOutGarage=false;
+         
+     }
+     public void moveCarIn(){
+        inOutGarage=true;
+     }
 }
