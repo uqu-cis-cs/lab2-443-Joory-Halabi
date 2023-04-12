@@ -14,8 +14,8 @@ mvn clean test
 ```
 
 You can run the program using the following command:
-```bash
-mvn clean compile exec:java
+```bashmvn clean compile exec:java
+
 ```
 
 ## Submitting your lab

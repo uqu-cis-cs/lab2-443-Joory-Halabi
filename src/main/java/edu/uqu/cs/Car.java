@@ -82,7 +82,7 @@ public class Car{
      * moveCarIn() to set the inOutGarage flag to true;
      *
      */
-    
+
      public void moveCarOut(){
         inOutGarage=false;
          
